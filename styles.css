@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    background-color: black;
+    width: 400px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.calculator-buttons {
+    display: grid;
+    
+    grid-template-areas: 
+    "clear  clear   undo    divide"
+    "seven  eight   nine    times"
+    "four   five    six     minus"
+    "one    two     three   plus"
+    "zero   zero    zero    equals";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.screen {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    text-align: right;
+}
+
+.calculator-button {
+    color: black;
+    background-color: #d8d8d8;
+    border-radius: 0;
+    border: none;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.calculator-button:hover {
+    background-color: #e7e7e7;
+}
+
+.calculator-button:active {
+    background-color: #797979;
+}
+
+.operation {
+    color: white;
+    background-color: #df974c;
+}
+
+.calculator-buttons > *:nth-child(1) {
+    grid-area: clear;
+}
+
+.calculator-buttons > *:nth-child(2) {
+    grid-area: undo;
+}
+
+.calculator-buttons > *:nth-child(3) {
+    grid-area: divide;
+}
+
+.calculator-buttons > *:nth-child(4) {
+    grid-area: seven;
+}
+
+.calculator-buttons > *:nth-child(5) {
+    grid-area: eight;
+}
+
+.calculator-buttons > *:nth-child(6) {
+    grid-area: nine;
+}
+
+.calculator-buttons > *:nth-child(7) {
+    grid-area: times;
+}
+
+.calculator-buttons > *:nth-child(8) {
+    grid-area: four;
+}
+
+.calculator-buttons > *:nth-child(9) {
+    grid-area: five;
+}
+
+.calculator-buttons > *:nth-child(10) {
+    grid-area: six;
+}
+
+.calculator-buttons > *:nth-child(11) {
+    grid-area: minus;
+}
+.calculator-buttons > *:nth-child(12) {
+    grid-area: one;
+}
+.calculator-buttons > *:nth-child(13) {
+    grid-area: two;
+}
+.calculator-buttons > *:nth-child(14) {
+    grid-area: three;
+}
+.calculator-buttons > *:nth-child(15) {
+    grid-area: plus;
+}
+.calculator-buttons > *:nth-child(16) {
+    grid-area: zero;
+}
+.calculator-buttons > *:nth-child(17) {
+    grid-area: equals;
+}
+
+
+
